@@ -12,7 +12,7 @@ const Home: React.FC<HomeProps> = ({ onLogin }) => {
       <button className="m-2 float-left" onClick={onLogin}>
         Se Déconnecter
       </button>
-      <div className="grid-container flex flex-wrap justify-center p-4">
+      <div className="grid-container grid-template-areas">
         {Data.map((item, index) => (
           <Grid key={index} item={item} />
         ))}

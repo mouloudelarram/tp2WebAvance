@@ -100,3 +100,14 @@ p {
 .login-button:hover {
   background-color: #e2e2e2;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'item1 item2 item3 item3'
+    'item4 item4 item3 item3'
+    'item5 item6 item7 item8';
+  gap: 10px;
+  
+  padding: 10px;
+}
