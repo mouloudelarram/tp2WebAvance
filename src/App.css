@@ -5,76 +5,10 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-.Home {
-  display: flex;
-  background-color: rbga ;
-  
-}
-
 html, body {
   margin: 0;
   padding: 0;
-}
-
-.login-page {
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  height: 100vh; 
-  width: 100vw; 
-  background-color: #000;
-}
-
-.login-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px;
-  background-color: #202020;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  width: fit-content;
-}
-
-.bowser-image {
-  width: 200px;
-  margin-bottom: 32px;
+  background-color: black;
 }
 
 p {
@@ -85,7 +19,8 @@ p {
 }
 
 .login-button {
-  padding: 15px 40px;
+  padding: 10px 30px;
+  margin: 2%;
   border: none;
   background-color: #F5F5F5;
   color: #000;
@@ -108,6 +43,65 @@ p {
     'item4 item4 item3 item3'
     'item5 item6 item7 item8';
   gap: 10px;
-  
   padding: 10px;
+}
+
+
+
+
+
+
+.grid-container {
+  max-width: 1000px;
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  grid-template-areas:
+    "item1 item2 item3 item3"
+    "item4 item4 item3 item3"
+    "item5 item6 item7 item8"
+    "item9 item9 item9 item9"
+}
+
+.grid-item {
+  background-color: rgba(255,255,255,0.3);
+  padding: 1%;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.grid-item-1 {
+  grid-area: item1;
+}
+
+.grid-item-2 {
+  grid-area: item2;
+}
+
+.grid-item-3 {
+  grid-area: item3;
+}
+
+.grid-item-4 {
+  grid-area: item4;
+}
+
+.grid-item-5 {
+  grid-area: item5;
+}
+
+.grid-item-6 {
+  grid-area: item6;
+}
+
+.grid-item-7 {
+  grid-area: item7;
+}
+
+.grid-item-8 {
+  grid-area: item8;
+}
+
+.grid-item-9 {
+  grid-area: item9;
 }
