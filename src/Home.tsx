@@ -14,7 +14,7 @@ const Home: React.FC<HomeProps> = ({onLogin}) => {
             </button>
             <div className="grid-container">
                 {Data.map((item, index) => (
-                    <Grid gridKey={index + 1} item={item}/>
+                    <Grid key={index} gridKey={index + 1} item={item}/>
                 ))}
             </div>
         </div>

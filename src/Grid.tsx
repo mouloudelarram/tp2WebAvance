@@ -7,7 +7,7 @@ interface ItemType {
 }
 
 interface GridProps {
-    gridKey: number; // Changed from key to gridKey
+    gridKey: number;
     item: ItemType;
 }
 
